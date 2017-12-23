@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-body {
+.page {
   font-family: "Pathway Gothic One", sans-serif;
   font-size: 16px;
   background-image: url(../images/page-bg.jpg);
@@ -13,6 +13,7 @@ body {
   background-position: center;
   font-weight: 400;
   padding: 30px 0px 30px 0px;
+  
 }
 
 .wrapper {
