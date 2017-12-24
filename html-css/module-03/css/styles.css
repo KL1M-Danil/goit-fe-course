@@ -72,9 +72,15 @@ img {
   margin-bottom: 10px;
 }
 
-.column {
-  display: inline-block;
-  width: 49%;
-  color: #263555;
-  padding: 20px 20px 0px 20px;
+.columns {
+    column-width: 125px;
+    
+    color: #263555;
+    padding: 20px 20px 0px 20px;
+    
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 10px;
 }
