@@ -1,65 +1,41 @@
-
 .page {
   font-family: "Pathway Gothic One", sans-serif;
-  font-size: 13px;
+  font-size: 13pt;
   background-image: url(../images/page-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-weight: 200;
+  font-weight: 400;
   padding: 30px 0px;
   line-height: 1.5;
 }
 
 .wrapper {
-  width: 800px;
+  width: 1000px;
   margin: auto;
-  padding: 60px 37px 40px 37px;
+  padding: 100px 37px 40px 37px;
   background-color: #fff;
 }
 
-/*Headlines in all articles*/
 h2 {
   color: #263555;
   text-transform: uppercase;
   margin-bottom: 30px;
-  font-size: 32px;
+  font-size: 32pt;
 }
+
+/*-----TOP PART-----*/
 
 .topPart {
   display: inline-block;
   margin-bottom: 50px;
 }
 
-/*Articles*/
 .first-article {
   color: #4e5050;
   margin-right: 50px;
   width: 70%;
   display: inline-block;
-}
-
-.list {
-  color: #4e5050;
-  display: inline-block;
-  width: 23%;
-  vertical-align: top;
-  counter-reset: second-article;
-	list-style: none;
-}
-
-.list-item::before {
-  counter-increment: second-article;
-  content: counter(second-article);
-  display: inline-block;
-	width: 30px;
-	height: 30px;
-	margin-right: 10px;
-	border-radius: 50%;
-	background-color: #38afe5;
-	color: #fefefe;
-	text-align: center;
-	line-height: 30px;
 }
 
 img {
@@ -68,26 +44,51 @@ img {
   float: left;
 }
 
+.list {
+  color: #4e5050;
+  display: inline-block;
+  width: 24%;
+  vertical-align: top;
+  counter-reset: second-article;
+  list-style: none;
+}
+
+.list-item::before {
+  counter-increment: second-article;
+  content: counter(second-article);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #38afe5;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+}
+
 .list h3 {
   display: inline-block;
   vertical-align: top;
   color: #263555;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 15pt;
 }
 
-.list p:last-child{
+.list p:last-child {
   margin-bottom: 0px;
 }
 
-.list li:last-child{
+.list li:last-child {
   margin-bottom: 0px;
 }
 
 .list p {
-  color: #4e5050; 
+  color: #4e5050;
+  display: inline-block;
+  
 }
-
+/*-----BOTTOM PART-----*/
 .bottom-part {
   border-top: 1px solid #dedbdb;
   padding-top: 50px;
@@ -100,52 +101,64 @@ img {
   margin-right: 50px;
 }
 
-/*.article {
-  color: #4e5050;
-}*/
-
 .article p {
   margin-bottom: 20px;
 }
 
 .excerption {
   display: inline-block;
-  width: 23%;
+  width: 24%;
   vertical-align: top;
 }
 
 .excerption p {
+  color: #263555;
   border: 1px solid #dedbdb;
   background-color: #fcfafa;
   padding: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .excerption h3 {
   color: #263555;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 16pt;
   text-align: center;
 }
 
 .excerption h4 {
-  color: #263555;
-  margin-bottom: 10px;
-  font-size: 13px;
+  color: #4e5050;
+  font-size: 13pt;
   text-align: center;
 }
 
-/*Subtitle in second article*/
+.excerption p:before{
+  content: "  " "\0022" " ";
+}
+
+.excerption p:after{
+  content: " " "\0022";
+}
+
 .subtitle {
   color: #263555;
   margin-bottom: 10px;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 15pt;
 }
 
 .columns {
   column-count: 2;
   color: #263555;
+}
+
+.columns li:before {
+  content: "\2192";
+  padding-right: 5px;
+}
+
+.columns li:last-child {
+  margin: 0;
 }
 
 li {
