@@ -1,0 +1,154 @@
+
+.page {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 13px;
+  background-image: url(../images/page-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-weight: 200;
+  padding: 30px 0px;
+  line-height: 1.5;
+}
+
+.wrapper {
+  width: 800px;
+  margin: auto;
+  padding: 60px 37px 40px 37px;
+  background-color: #fff;
+}
+
+/*Headlines in all articles*/
+h2 {
+  color: #263555;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.topPart {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+/*Articles*/
+.first-article {
+  color: #4e5050;
+  margin-right: 50px;
+  width: 70%;
+  display: inline-block;
+}
+
+.list {
+  color: #4e5050;
+  display: inline-block;
+  width: 23%;
+  vertical-align: top;
+  counter-reset: second-article;
+	list-style: none;
+}
+
+.list-item::before {
+  counter-increment: second-article;
+  content: counter(second-article);
+  display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #38afe5;
+	color: #fefefe;
+	text-align: center;
+	line-height: 30px;
+}
+
+img {
+  margin-bottom: 25px;
+  margin-right: 25px;
+  float: left;
+}
+
+.list h3 {
+  display: inline-block;
+  vertical-align: top;
+  color: #263555;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.list p:last-child{
+  margin-bottom: 0px;
+}
+
+.list li:last-child{
+  margin-bottom: 0px;
+}
+
+.list p {
+  color: #4e5050; 
+}
+
+.bottom-part {
+  border-top: 1px solid #dedbdb;
+  padding-top: 50px;
+  color: #4e5050;
+}
+
+.second-article {
+  display: inline-block;
+  width: 70%;
+  margin-right: 50px;
+}
+
+/*.article {
+  color: #4e5050;
+}*/
+
+.article p {
+  margin-bottom: 20px;
+}
+
+.excerption {
+  display: inline-block;
+  width: 23%;
+  vertical-align: top;
+}
+
+.excerption p {
+  border: 1px solid #dedbdb;
+  background-color: #fcfafa;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.excerption h3 {
+  color: #263555;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.excerption h4 {
+  color: #263555;
+  margin-bottom: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/*Subtitle in second article*/
+.subtitle {
+  color: #263555;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.columns {
+  column-count: 2;
+  color: #263555;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
