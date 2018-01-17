@@ -12,8 +12,7 @@
   background-size: cover;
   background-position: center;
   font-weight: 400;
-  padding: 30px 0px 30px 0px;
-  
+  padding: 30px 0px;
 }
 
 .wrapper {
@@ -70,15 +69,16 @@ img {
 .subtitle {
   color: #263555;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .columns {
-    column-width: 125px;
-    color: #263555;
-    padding: 20px 20px 0px 20px;
+  column-count: 2;
+  color: #263555;
+  padding: 20px 20px 0px 20px;
 }
 
 li {
-    list-style-type: none;
-    margin-bottom: 10px;
+  list-style-type: none;
+  margin-bottom: 10px;
 }
