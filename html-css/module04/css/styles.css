@@ -26,14 +26,13 @@ h2 {
 
 /*-----TOP PART-----*/
 
-.topPart {
-  display: inline-block;
+.top-part {
   margin-bottom: 50px;
 }
 
-.left-article {
+.agancy-profile {
   color: #4e5050;
-  margin-right: 50px;
+  margin-right: calc(6% - 4px);
   width: 70%;
   display: inline-block;
 }
@@ -44,7 +43,7 @@ img {
   float: left;
 }
 
-.right-article {
+.priciples-section {
   color: #4e5050;
   display: inline-block;
   width: 24%;
@@ -157,7 +156,7 @@ img {
 .columns li:before {
   content: "\2192";
   color: #38afe5;
-  padding-right: 5px;
+  margin-right: 5px;
 }
 
 .columns li:nth-child(5) {
