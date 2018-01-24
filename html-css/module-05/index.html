@@ -6,6 +6,7 @@
     <title>hw-module05</title>
     <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -48,16 +49,57 @@
         </nav>
         <logo class="logo">
             <p>Journey</p>
-            </logo>
+        </logo>
     </header>
     <main class="main">
-        <section class="section-gallary">
+        <section class="section-carousel">
+            <div class="carousel">
 
+                <div>
+                    <img src="../img/ship.png" alt="ship on the beach">
+                </div>
+                <div>
+                    <img src="../img/rome.png" alt="city Rome">
+                </div>
+                <div>
+                    <img src="../img/city.png" alt="city">
+                </div>
+                <div>
+                    <img src="../img/venice.png" alt="city Venice">
+                </div>
+            </div>
+            <div>
+                <p class="title">There are plenty of places</p>
+                <p class="subtitle">That are worth seeing</p>
+            </div>
         </section>
         <article class="article">
-
+            <h2>Top destinations</h2>
+            <div class="pop-up-block">
+                <h2>Venice</h2>
+                <p>Lorem ipsum dolor site geril amet, consectetur cing eliti. Suspendisse nulla leo mew dignissim eu velite
+                    a rew qw vehicula lacinia arcufasecro. Aenean lacinia ucibusy fase tortor ut feugiat. Rabitur oliti aliquam
+                    bibendum olor quis malesuadivamu.</p>
+            </div>
+            <div class="gallery">
+                <img src="../img/mini-venice.png" alt="city Venice">
+                <img src="../img/mini-ny.png" alt="city New York">
+                <img src="../img/mini-paris.png" alt="city Paris">
+            </div>
         </article>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick({
+                nextArrow: '<i class="slick-next"></i>',
+                prevArrow: '<i class="slick-prev"></i>',
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        });
+    </script>
 </body>
 
 </html>
