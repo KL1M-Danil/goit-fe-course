@@ -1,0 +1,58 @@
+---WEBINAR 11.01---
+
+- rel="noopener"
+  https://mathiasbynens.github.io/rel-noopener/
+  https://developers.google.com/web/tools/lighthouse/audits/noopener
+
+- bg image vs image
+  http://xiper.net/learn/tegofenshuj/img-vs-backround-image
+  http://buildawesomewebsites.com/blog/html-img-tags-vs-css-background-images
+
+- data URI
+  https://css-tricks.com/data-uris/
+
+- Псевдоэлементы before и after
+  https://www.w3schools.com/css/css_pseudo_elements.asp
+
+- Основы Float - Очистка обтекания
+  https://codepen.io/Zerk/pen/ZXQyjr?editors=0100
+
+---WEBINAR 15.01---
+
+- https://gist.github.com/
+
+- CSS счетчики
+  https://codepen.io/Zerk/pen/BwNPLL?editors=0100
+
+- nth-child, nth-last-child
+- nth-of-type, nth-last-of-type
+
+  https://css-tricks.com/useful-nth-child-recipies/
+  https://css-tricks.com/examples/nth-child-tester/
+
+- multiple backgrounds: https://codepen.io/Zerk/pen/JMZmmJ?editors=0100
+
+- attribute selector and content: attr(href)
+  https://www.w3schools.com/css/css_attribute_selectors.asp
+
+---WEBINAR 18.01---
+
+- z-index
+https://codepen.io/Zerk/pen/YrwyXd?editors=0100
+
+---WEBINAR 22.01---
+
+- Семантические теги
+  https://slack-redir.net/link?url=https%3A%2F%2Fhtml5book.ru%2Fhtml5-semantic-elements%2F
+
+- CSS преобразования: transform
+  https://codepen.io/Zerk/pen/MOWgMw
+
+- CSS filter
+  https://davidwalsh.name/demo/css-filters.php
+
+- Стандарт HTML5. Понятие семантической верстки.Основные семантические теги.
+  https://codepen.io/mi-lee/post/an-overview-of-html5-semantics
+
+- Карусель(легкий способ)  
+  http://kenwheeler.github.io/slick/

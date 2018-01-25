@@ -12,12 +12,14 @@
 /*-----HEADER-----*/
 .header {
   height: 200px;
+  position: relative;
 }
 
 .menu {
   text-transform: uppercase;
   width: 100%;
   text-align: center;
+  position: relative;
 }
 
 .menu-item {
@@ -83,7 +85,9 @@
   font-size: 60px;
   font-family: "Dorsa";
   margin: 10px;
-  transform: translateX(620%) translateY(-105%);
+  transform: translateX(-50%) translateY(-75%);
+  top: 50%;
+  left: 50%;
   position: absolute;
 }
 
@@ -91,17 +95,18 @@
 .main {
   width: 1020px;
   margin: auto;
-  padding: 60px 00px 60px 0px;
+  padding: 60px 0px 0px 0px;
   background-color: #fff;
 }
 
 .section-carousel {
   text-transform: uppercase;
+  padding: 0px 50px 50px 50px;
 }
 
 .carousel {
   width: 900px;
-  margin: 0px 50px 50px 50px;
+  margin: 0px;
 }
 
 img {
@@ -118,7 +123,7 @@ img {
   width: 60px;
   z-index: 2;
   background-color: #38afe5;
-  color: #ffffff;
+  color: var(--second-font-color);
   cursor: pointer;
 }
 
@@ -143,7 +148,7 @@ img {
 
 .slick-next {
   bottom: 50px;
-  right: -1px;
+  right: 0px;
   height: 40px;
   border-bottom-left-radius: 40%;
   border-top-left-radius: 40%;
@@ -161,7 +166,7 @@ img {
   color: var(--main-font-color);
   background-color: var(--second-font-color);
   padding: 10px;
-  transform: translateX(24%) translateY(-700%);
+  transform: translateX(0) translateY(-700%);
   position: absolute;
 }
 
@@ -171,29 +176,35 @@ img {
   color: var(--second-font-color);
   background-color: #38afe5;
   padding: 10px;
-  transform: translateX(19%) translateY(-442%);
+  transform: translateX(0) translateY(-441%);
   position: absolute;
 }
 
 .article {
   width: 900px;
-  margin: 0px 50px 0px 50px;
+  padding: 0px 50px 0px 50px;
+  margin: 0px;
 }
 
 .article h2 {
   margin-bottom: 50px;
   text-transform: uppercase;
+  color: var(--main-font-color);
 }
 
-.gallery img {
+.card-destinations {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.card-destinations img {
   display: inline-block;
   width: 290px;
   height: 290px;
-  margin-right: 10px;
   position: relative;
 }
 
-.gallery img:last-child {
+.card-destinations:last-child {
   margin-right: 0px;
 }
 
@@ -221,8 +232,39 @@ img {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: var(--main-font-weight);
+  color: var(--second-font-color);
+  margin-bottom: 15px;
 }
 
-.article:hover > .pop-up-block {
+.pop-up-block a {
+  text-decoration: none;
+  color: #000000;
+  background-color: #fff;
+  border-radius: 10%;
+  padding: 0px 10px 0px 10px;
+  font-size: 12px;
+  position: absolute;
+  transform: translateX(50%) translateY(200%);
+}
+
+.card-destinations:hover > .pop-up-block {
   display: block;
+}
+
+.to-top-bottom {
+  position: fixed;
+  bottom: 40px;
+  right: 220px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #38afe5;
+  border-radius: 100%;
+  color: var(--second-font-color);
+  text-align: center;
+  text-decoration: none;
+}
+
+.to-top-bottom:before {
+  content: "\21D1";
 }
