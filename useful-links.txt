@@ -1,4 +1,4 @@
----WEBINAR 11.01---
+------------------------------------WEBINAR 11.01----------------------------------------
 
 - rel="noopener"
   https://mathiasbynens.github.io/rel-noopener/
@@ -17,7 +17,7 @@
 - Основы Float - Очистка обтекания
   https://codepen.io/Zerk/pen/ZXQyjr?editors=0100
 
----WEBINAR 15.01---
+------------------------------------WEBINAR 15.01-----------------------------------------
 
 - https://gist.github.com/
 
@@ -35,12 +35,12 @@
 - attribute selector and content: attr(href)
   https://www.w3schools.com/css/css_attribute_selectors.asp
 
----WEBINAR 18.01---
+------------------------------------WEBINAR 18.01-----------------------------------------
 
 - z-index
 https://codepen.io/Zerk/pen/YrwyXd?editors=0100
 
----WEBINAR 22.01---
+------------------------------------WEBINAR 22.01-----------------------------------------
 
 - Семантические теги
   https://slack-redir.net/link?url=https%3A%2F%2Fhtml5book.ru%2Fhtml5-semantic-elements%2F

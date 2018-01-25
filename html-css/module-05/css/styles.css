@@ -6,26 +6,33 @@
   background-size: cover;
   background-position: center;
   font-weight: 400;
-  padding: 30px 0px;
   line-height: 1.5;
 }
+
 /*-----HEADER-----*/
 .header {
   height: 200px;
   position: relative;
+  padding-top: 50px;
 }
 
 .menu {
   text-transform: uppercase;
   width: 100%;
+  padding: 50px 0px 50px 0px;
+  display: inline-block;
+  vertical-align: middle;
   text-align: center;
-  position: relative;
 }
 
 .menu-item {
   display: inline-block;
   position: relative;
-  margin: 50px;
+  margin-right: 100px;
+}
+
+.menu-item:last-child {
+  margin-right: 0px;
 }
 
 .menu-item a {
@@ -85,7 +92,7 @@
   font-size: 60px;
   font-family: "Dorsa";
   margin: 10px;
-  transform: translateX(-50%) translateY(-75%);
+  transform: translateX(-60%) translateY(-60%);
   top: 50%;
   left: 50%;
   position: absolute;
@@ -95,18 +102,13 @@
 .main {
   width: 1020px;
   margin: auto;
-  padding: 60px 0px 0px 0px;
+  padding: 60px 50px 140px 50px;
   background-color: #fff;
 }
 
 .section-carousel {
   text-transform: uppercase;
-  padding: 0px 50px 50px 50px;
-}
-
-.carousel {
-  width: 900px;
-  margin: 0px;
+  padding-bottom: 50px;
 }
 
 img {
@@ -134,7 +136,7 @@ img {
 
 .slick-prev {
   bottom: 50px;
-  right: 840px;
+  right: 960px;
   height: 40px;
   border-top-right-radius: 40%;
   border-bottom-right-radius: 40%;
@@ -176,14 +178,8 @@ img {
   color: var(--second-font-color);
   background-color: #38afe5;
   padding: 10px;
-  transform: translateX(0) translateY(-441%);
+  transform: translateX(0) translateY(-448%);
   position: absolute;
-}
-
-.article {
-  width: 900px;
-  padding: 0px 50px 0px 50px;
-  margin: 0px;
 }
 
 .article h2 {
@@ -199,8 +195,8 @@ img {
 
 .card-destinations img {
   display: inline-block;
-  width: 290px;
-  height: 290px;
+  width: 330px;
+  height: 330px;
   position: relative;
 }
 
@@ -215,8 +211,8 @@ img {
   color: var(--second-font-color);
   font-size: 13px;
   z-index: 2;
-  width: 145px;
-  height: 270px;
+  width: 165px;
+  height: 310px;
   line-height: 1.5;
   text-align: center;
   font-weight: var(--main-font-weight);
@@ -244,7 +240,7 @@ img {
   padding: 0px 10px 0px 10px;
   font-size: 12px;
   position: absolute;
-  transform: translateX(50%) translateY(200%);
+  transform: translateX(50%) translateY(500%);
 }
 
 .card-destinations:hover > .pop-up-block {
@@ -254,13 +250,14 @@ img {
 .to-top-bottom {
   position: fixed;
   bottom: 40px;
-  right: 220px;
+  right: 160px;
   display: inline-block;
   width: 30px;
   height: 30px;
   background-color: #38afe5;
   border-radius: 100%;
   color: var(--second-font-color);
+  vertical-align: middle;
   text-align: center;
   text-decoration: none;
 }
