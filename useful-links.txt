@@ -56,3 +56,6 @@ https://codepen.io/Zerk/pen/YrwyXd?editors=0100
 
 - Карусель(легкий способ)  
   http://kenwheeler.github.io/slick/
+
+- Фиксированая кнопка на странице
+  https://codepen.io/Zerk/pen/JMQpdY
