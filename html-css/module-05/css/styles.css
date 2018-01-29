@@ -11,17 +11,12 @@
 
 /*-----HEADER-----*/
 .header {
-  height: 200px;
   position: relative;
-  padding-top: 50px;
+  padding:100px 50px;
 }
 
 .menu {
   text-transform: uppercase;
-  width: 100%;
-  padding: 50px 0px 50px 0px;
-  display: inline-block;
-  vertical-align: middle;
   text-align: center;
 }
 
@@ -29,7 +24,9 @@
   display: inline-block;
   position: relative;
   margin-right: 100px;
+  border-bottom: 2px solid transparent;
 }
+
 
 .menu-item:last-child {
   margin-right: 0px;
@@ -79,7 +76,7 @@
   margin: 5px;
 }
 
-.logo p {
+.logo {
   display: inline-block;
   background-color: #fff;
   width: 140px;
@@ -91,8 +88,7 @@
   color: #263555;
   font-size: 60px;
   font-family: "Dorsa";
-  margin: 10px;
-  transform: translateX(-60%) translateY(-60%);
+  transform: translateX(-50%) translateY(-50%);
   top: 50%;
   left: 50%;
   position: absolute;
@@ -106,16 +102,14 @@
   background-color: #fff;
 }
 
-.section-carousel {
+.carousel {
   text-transform: uppercase;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 img {
   display: block;
-  height: 600px;
   width: 100%;
-  object-fit: cover;
 }
 
 .slick-arrow {
@@ -182,7 +176,7 @@ img {
   position: absolute;
 }
 
-.article h2 {
+.section h2 {
   margin-bottom: 50px;
   text-transform: uppercase;
   color: var(--main-font-color);
@@ -191,32 +185,32 @@ img {
 .card-destinations {
   display: inline-block;
   margin-right: 10px;
-}
-
-.card-destinations img {
-  display: inline-block;
-  width: 330px;
-  height: 330px;
+  width: 32%;
+  margin-right: calc(2% - 5px);
   position: relative;
 }
+
+
 
 .card-destinations:last-child {
   margin-right: 0px;
 }
 
 .pop-up-block {
+  box-sizing: border-box;
   display: none;
   position: absolute;
   background-color: #193149;
   color: var(--second-font-color);
   font-size: 13px;
   z-index: 2;
-  width: 165px;
-  height: 310px;
   line-height: 1.5;
   text-align: center;
   font-weight: var(--main-font-weight);
   padding: 10px;
+  text-align: right;
+  width: 50%;
+  height: 100%;
 }
 
 .pop-up-block p {
@@ -230,17 +224,18 @@ img {
   font-weight: var(--main-font-weight);
   color: var(--second-font-color);
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .pop-up-block a {
+  display: inline-block;
   text-decoration: none;
   color: #000000;
   background-color: #fff;
   border-radius: 10%;
   padding: 0px 10px 0px 10px;
   font-size: 12px;
-  position: absolute;
-  transform: translateX(50%) translateY(500%);
+  
 }
 
 .card-destinations:hover > .pop-up-block {
