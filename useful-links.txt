@@ -43,7 +43,7 @@ https://codepen.io/Zerk/pen/YrwyXd?editors=0100
 ------------------------------------WEBINAR 22.01-----------------------------------------
 
 - Семантические теги
-  https://slack-redir.net/link?url=https%3A%2F%2Fhtml5book.ru%2Fhtml5-semantic-elements%2F
+  https://html5book.ru/html5-semantic-elements/#part4
 
 - CSS преобразования: transform
   https://codepen.io/Zerk/pen/MOWgMw
