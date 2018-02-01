@@ -53,6 +53,7 @@ h2 {
 .header {
   width: 1000px;
   margin: auto;
+  position: relative;
 }
 
 .menu {
@@ -209,6 +210,10 @@ img {
 
 .offer-section {
   flex-grow: 2;
+}
+
+.article p {
+  margin-bottom: 10px;
 }
 
 .excerption p {

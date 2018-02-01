@@ -1,0 +1,128 @@
+.page {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 15px;
+  background-image: url(../img/page-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.wrapper {
+  width: 950px;
+  margin: auto;
+  padding: 100px 37px 40px 37px;
+  background-color: #fff;
+}
+
+/*-----HEADER-----*/
+
+.header {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.menu {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 26px;
+}
+
+.menu-item {
+  align-items: center;
+  border-bottom: 2px solid transparent;
+}
+
+.menu-item:last-child {
+  margin-right: 0px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: var(--second-font-color);
+}
+
+.menu-item:nth-child(3) {
+  margin-right: 250px;
+}
+
+.menu-item a:hover {
+  color: var(--main-font-color);
+  transition-duration: 0.2s;
+}
+
+.menu-item:hover > .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  font-size: 17px;
+  background-color: var(--second-font-color);
+  border-radius: 5%;
+}
+
+.submenu:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent #fff transparent;
+  transform: translateX(-5px) translateY(-5px);
+  position: absolute;
+}
+
+.submenu-item a {
+  color: var(--main-font-color);
+  margin: 2px;
+}
+
+.logo {
+  background-color: #fff;
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+  border-radius: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: "Dorsa";
+  top:50%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.logo a {
+  text-decoration: none;
+  color: #263555;
+}
+
+/*-----WRAPPER-----*/
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gallery-img {
+  flex: 1 0 30%;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.section h2 {
+  padding: 20px;
+  text-transform: uppercase;
+  color: #193149;
+  font-size: 24px;
+}
