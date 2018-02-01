@@ -116,10 +116,12 @@ h2 {
   margin: 2px;
 }
 
+
 .logo {
-  transform: translateX(-50%) translateY(-50%);
+  top:50%;
   left: 50%;
   position: absolute;
+  transform: translateX(-50%) translateY(-50%);
   background-color: #fff;
   width: 140px;
   height: 140px;
@@ -129,8 +131,6 @@ h2 {
   text-transform: uppercase;
   font-size: 60px;
   font-family: "Dorsa";
-  /*display: flex;
-  justify-content: center;*/
 }
 
 .logo a {
@@ -305,3 +305,23 @@ img {
   width: 30px;
   height: 30px;
 }
+
+.to-top-bottom {
+    position: fixed;
+    bottom: 250px;
+    right: 205px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #38afe5;
+    border-radius: 100%;
+    color: var(--second-font-color);
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+  }
+
+  .to-top-bottom:before {
+    content: "\21D1";
+  }
