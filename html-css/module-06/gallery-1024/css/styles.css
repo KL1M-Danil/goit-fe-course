@@ -12,14 +12,14 @@
 .wrapper {
   width: 950px;
   margin: auto;
-  padding: 100px 37px 40px 37px;
+  padding: 50px 37px 40px 37px;
   background-color: #fff;
 }
 
 /*-----HEADER-----*/
 
 .header {
-  width: 1000px;
+  width: 950px;
   margin: auto;
   position: relative;
 }
@@ -95,10 +95,15 @@
   text-transform: uppercase;
   font-size: 60px;
   font-family: "Dorsa";
-  top:50%;
+  top: 50%;
   left: 50%;
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
+}
+
+.logo a:hover {
+  color: #7B68EE;
+  transition-duration: 0.2s;
 }
 
 .logo a {
@@ -110,19 +115,124 @@
 
 .gallery {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.gallery-img {
+.gallery li {
   flex: 1 0 30%;
-  color: #fff;
-  margin-bottom: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.gallery li:nth-child(3n-3) {
+  padding-right: 0px;
+}
+
+.gallery li:nth-child(n + 6) {
+  padding-bottom: 0px;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
 }
 
 .section h2 {
-  padding: 20px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   color: #193149;
   font-size: 24px;
+}
+
+.gallery li:hover .icon-zoom {
+  display: block;
+}
+
+.gallery img:hover {
+  filter: brightness(0.3);
+  transition-duration: 0.3s;
+}
+
+.icon-zoom {
+  display: none;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  background-image: url("http://image.ibb.co/ksq6pR/icon.png");
+}
+
+
+/*-----FOOTER-----*/
+
+.menu-footer {
+  background-color: #30455b;
+  width: 950px;
+  margin: auto;
+  padding: 40px 37px 20px 37px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.menu-footer li {
+  flex-basis: 22%;
+}
+
+.menu-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.social-icons img {
+  display: block;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.social-icons a:last-child {
+  margin-right: 0px;
+}
+
+.to-top-bottom {
+  position: fixed;
+  bottom: 225px;
+  right: 205px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #38afe5;
+  border-radius: 100%;
+  color: var(--second-font-color);
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.to-top-bottom:before {
+  content: "\21D1";
 }
