@@ -13,7 +13,7 @@
   width: 950px;
   margin: auto;
   padding: 50px 37px 40px 37px;
-  background-color: #fff;
+  background-color: var(--main-background-color);
 }
 
 /*-----HEADER-----*/
@@ -36,7 +36,6 @@
 
 .menu-item {
   align-items: center;
-  border-bottom: 2px solid transparent;
 }
 
 .menu-item:last-child {
@@ -86,7 +85,7 @@
 }
 
 .logo {
-  background-color: #fff;
+  background-color: var(--main-background-color);
   width: 140px;
   height: 140px;
   line-height: 140px;
@@ -102,13 +101,13 @@
 }
 
 .logo a:hover {
-  color: #7B68EE;
+  color: var(--hover-color);
   transition-duration: 0.2s;
 }
 
 .logo a {
   text-decoration: none;
-  color: #263555;
+  color: var(--main-font-color);
 }
 
 /*-----WRAPPER-----*/
@@ -166,10 +165,9 @@
   background-image: url("http://image.ibb.co/ksq6pR/icon.png");
 }
 
+/*-----NAV SECTION-----*/
 
-/*-----FOOTER-----*/
-
-.menu-footer {
+.nav-section {
   background-color: #30455b;
   width: 950px;
   margin: auto;
@@ -181,17 +179,53 @@
   font-size: 18px;
 }
 
-.menu-footer li {
-  flex-basis: 22%;
+.menu-part {
+  flex-basis: 75%;
+  align-items: center;
+  padding-left: 50px;
 }
 
-.menu-footer a {
-  text-decoration: none;
-  color: #fff;
+.contacts-part {
+  flex-basis: 15%;
 }
+
+.menu-part ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-part li {
+  flex-basis: 33%;
+  justify-content: center;
+}
+
+.menu-part a {
+  text-decoration: none;
+  color: var(--second-font-color);
+}
+
+.contacts-part {
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.contacts-part a {
+  flex-basis: 45%;
+  text-decoration: none;
+  color: var(--second-font-color);
+}
+
+.contacts-part a:hover {
+  color: var(--hover-color);
+}
+
+
+/*-----FOOTER-----*/
 
 .footer p {
-  color: #fff;
+  color: var(--second-font-color);
   text-align: center;
   font-size: 13px;
 }
@@ -211,6 +245,11 @@
   display: block;
   height: 30px;
   margin-right: 10px;
+}
+
+.social-icons img:hover {
+  transform: scale(1.5);
+  transition-duration: 0.15s;
 }
 
 .social-icons a:last-child {
@@ -235,4 +274,8 @@
 
 .to-top-bottom:before {
   content: "\21D1";
+}
+
+.to-top-bottom:hover {
+  background-color: var(--hover-color);
 }
