@@ -60,6 +60,19 @@ https://codepen.io/Zerk/pen/YrwyXd?editors=0100
 - Фиксированая кнопка на странице
   https://codepen.io/Zerk/pen/JMQpdY
 
-------------------------------------WEBINAR 22.01-----------------------------------------
+------------------------------------WEBINAR 25.01-----------------------------------------
 
+- Знакомство с Flexbox
+- display: flex
+- Понятие flex-контейнера и flex-элемента.
+- Flex-оси и flex-direction.
+- Выравнивание flex-элементов на оси, justify-content, align-items.
+- Свойства flex-элемента: width vs flex-basis, align-self, flex-grow, flex-shrink, order.
+- Многострочные flex-контейнеры и align-content.
+http://flexboxfroggy.com/
+https://codepen.io/Zerk/pen/ZKbrjW
+
+------------------------------------WEBINAR 25.01-----------------------------------------
+
+https://github.com/axZerk/fe-online-03/tree/master/webinar-29-01
 

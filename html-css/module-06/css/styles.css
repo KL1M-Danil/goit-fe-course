@@ -66,10 +66,6 @@ h2 {
   font-size: 26px;
 }
 
-.menu-item {
-  align-items: center;
-  border-bottom: 2px solid transparent;
-}
 
 .menu-item:last-child {
   margin-right: 0px;
@@ -173,7 +169,8 @@ img {
 .list-item::before {
   counter-increment: priciples-aside;
   content: counter(priciples-aside);
-  width: 70px;
+  flex-basis: 30px;
+  flex-shrink: 0;
   height: 30px;
   margin-right: 10px;
   border-radius: 50%;
@@ -285,7 +282,6 @@ img {
 
 .menu-part {
   flex-basis: 75%;
-  align-items: center;
   padding-left: 50px;
 }
 
@@ -300,7 +296,6 @@ img {
 
 .menu-part li {
   flex-basis: 33%;
-  justify-content: center;
 }
 
 .menu-part a {
@@ -309,10 +304,14 @@ img {
 }
 
 .contacts-part {
-  display: flex;
-  flex-wrap: wrap;
   text-transform: uppercase;
   font-size: 18px;
+}
+
+.contacts-part h2{
+  color: var(--second-font-color);
+  font-size: 18px;
+  margin: 0;
 }
 
 .contacts-part a {
