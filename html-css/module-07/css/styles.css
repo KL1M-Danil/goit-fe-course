@@ -1,0 +1,11 @@
+@import url('reset.css');
+@import url('variables.css');
+
+
+.masthead-wrapper {
+    min-height: 43.75rem;
+    background-image: url('../img/bg-img-masthead.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
