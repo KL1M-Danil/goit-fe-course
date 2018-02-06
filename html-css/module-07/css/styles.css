@@ -1,11 +1,65 @@
-@import url('reset.css');
-@import url('variables.css');
+@import url("reset.css");
+@import url("variables.css");
 
+a {
+  text-decoration: none;
+}
 
 .masthead-wrapper {
-    min-height: 43.75rem;
-    background-image: url('../img/bg-img-masthead.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  min-height: 43.75rem;
+  background-image: url("../img/bg-img-masthead.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 58.43rem;
+  margin: auto;
+}
+
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 7.5rem;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 2.5rem;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 0.625rem;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-item:hover {
+  border-color: #fed136;
+  color: #fed136;
+}
+
+.nav-item a:hover {
+  color: #fed136;
+}
+
+.nav-item a {
+  color: var(--main-font-color);
+}
+
+
+
+.promo {
+  min-height: 36.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
