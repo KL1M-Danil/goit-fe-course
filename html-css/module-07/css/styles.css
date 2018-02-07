@@ -1,16 +1,24 @@
 @import url("reset.css");
+@import url("fonts.css");
 @import url("variables.css");
 
 a {
   text-decoration: none;
 }
+/*-----MASTHEAD-----*/
 
 .masthead-wrapper {
   min-height: 43.75rem;
-  background-image: url("../img/bg-img-masthead.png");
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../img/bg-img-masthead.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: RGBA(0, 0, 0, 0.5);
 }
 
 .container {
@@ -25,6 +33,14 @@ a {
   min-height: 7.5rem;
 }
 
+.logo {
+  font-family: Lobster, serif;
+  font-weight: 400;
+  color: #fed136;
+  font-size: 1.625rem;
+  padding-bottom: 0.625rem;
+}
+
 .nav {
   display: flex;
 }
@@ -35,6 +51,8 @@ a {
   text-transform: uppercase;
   border-bottom: 3px solid transparent;
   padding-bottom: 0.625rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
 }
 
 .nav-item:last-child {
@@ -54,12 +72,153 @@ a {
   color: var(--main-font-color);
 }
 
-
-
 .promo {
   min-height: 36.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: var(--main-font-color);
+}
+
+.promo-title {
+  font-family: Source_Code_Pro, monospace;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 3.125rem;
+}
+
+.promo-subtitle {
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 4.6875rem;
+  margin-bottom: 3.75rem;
+}
+
+.btn {
+  border: 2px solid #fed136;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--main-font-color);
+  background-color: var(--main-background-color);
+  padding: 1.5625rem 3.125rem;
+  border-radius: 3px;
+}
+
+/*-----SERVICES-----*/
+
+.services-wrapper {
+  min-height: 43.75rem;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 16.25rem;
+}
+
+.section-header-title {
+  color: var(--second-font-color);
+  font-size: 2.5rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.section-header-subtitle {
+  color: #777777;
+  font-size: 1rem;
+  font-family: Source_Code_Pro, monospace;
+  font-weight: 400;
+}
+
+.services-item {
+  display: flex;
+  min-height: 16.25rem;
+}
+
+.services-card {
+  flex-basis: 33%;
+  text-align: center;
+}
+
+.services-icon i {
+  background-image: url("../img/icon-circle.png"), url("../img/icon-basket.png");
+}
+
+.services-name {
+  color: var(--second-font-color);
+  font-size: 1.125rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.services-text {
+  color: #777777;
+  font-size: 1.125rem;
+  font-family: Roboto_Slab, sans-serif;
+  font-weight: 400;
+}
+
+/*-----CONTACTS-----*/
+
+.contact-wrapper {
+  min-height: 43.75rem;
+  background-image: url("../img/bg-img-contact-map.png"),
+    url("../img/bg-img-contact.png");
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-position: right;
+}
+
+.section-header-title-contact {
+  color: var(--main-font-color);
+  font-size: 2.5rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  min-height: 13.125rem;
+}
+
+.contact-form-bio,
+.contact-form-message {
+ flex-basis: 50%;
+}
+
+.contact-form-bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form-bio input {
+  margin-bottom: 1.25rem;
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding: 0.625rem 21.875rem 0.625rem 0.625rem;
+}
+
+.contact-form-bio input:last-child {
+  margin-bottom: 0;
+}
+
+.contact-form-massage textarea {
+  margin-bottom: 1.25rem;
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding: 0.625rem 21.875rem 0.625rem 0.625rem;
 }
