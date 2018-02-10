@@ -20,13 +20,6 @@
 }
 
 @font-face {
-  font-family: "Nova_Mono";
-  src: url("../fonts/Nova_Mono/NovaMono.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Roboto_Slab";
   src: url("../fonts/Roboto_Slab/RobotoSlab-Regular.ttf");
   font-weight: 400;

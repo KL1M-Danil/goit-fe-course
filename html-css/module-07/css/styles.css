@@ -41,6 +41,11 @@ a {
   padding-bottom: 0.625rem;
 }
 
+.logo:hover {
+  transform: scale(1.5);
+  transition-duration: 0.5s;
+}
+
 .nav {
   display: flex;
 }
@@ -97,7 +102,7 @@ a {
 }
 
 .btn {
-  border: 2px solid #fed136;
+  border: 0.125rem solid #fed136;
   text-transform: uppercase;
   font-family: Montserrat, sans-serif;
   font-weight: 700;
@@ -108,10 +113,16 @@ a {
   border-radius: 3px;
 }
 
+.btn:hover {
+  color: #fed136;
+  background-color: #fff;
+  transition-duration: 0.5s;
+}
+
 /*-----SERVICES-----*/
 
 .services-wrapper {
-  min-height: 43.75rem;
+  min-height: 35rem;
 }
 
 .section-header {
@@ -146,10 +157,41 @@ a {
 .services-card {
   flex-basis: 33%;
   text-align: center;
+  margin-right: 3.125rem;
 }
 
-.services-icon i {
-  background-image: url("../img/icon-circle.png"), url("../img/icon-basket.png");
+.services-card:last-child {
+  margin-right: 0;
+}
+
+.services-icon-basket {
+  display: inline-block;
+  width: 4.6875rem;
+  height: 4.6875rem;
+  background-image: url("../img/icon-basket.png"), url("../img/icon-circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 1.5625rem;
+}
+
+.services-icon-laptop {
+  display: inline-block;
+  width: 4.6875rem;
+  height: 4.6875rem;
+  background-image: url("../img/Icon-Laptop.png"), url("../img/icon-circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 1.5625rem;
+}
+
+.services-icon-look {
+  display: inline-block;
+  width: 4.6875rem;
+  height: 4.6875rem;
+  background-image: url("../img/Icon-Locked.png"), url("../img/icon-circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 1.5625rem;
 }
 
 .services-name {
@@ -162,7 +204,7 @@ a {
 
 .services-text {
   color: #777777;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-family: Roboto_Slab, sans-serif;
   font-weight: 400;
 }
@@ -170,7 +212,7 @@ a {
 /*-----CONTACTS-----*/
 
 .contact-wrapper {
-  min-height: 43.75rem;
+  min-height: 40.625rem;
   background-image: url("../img/bg-img-contact-map.png"),
     url("../img/bg-img-contact.png");
   background-repeat: no-repeat;
@@ -188,6 +230,10 @@ a {
 }
 
 .contact-form {
+  margin-bottom: 1.875rem;
+}
+
+.contact-form form {
   display: flex;
   justify-content: center;
   min-height: 13.125rem;
@@ -195,30 +241,102 @@ a {
 
 .contact-form-bio,
 .contact-form-message {
- flex-basis: 50%;
+  flex-basis: 40%;
 }
 
 .contact-form-bio {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+  margin-right: 1rem;
 }
 
 .contact-form-bio input {
   margin-bottom: 1.25rem;
   border-radius: 2px;
+  padding: 1.25rem;
+  width: 18.75rem;
+  border: 0;
+  outline: 0;
+}
+
+input::placeholder {
+  font-size: 0.875rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: #bbbbbb;
   text-transform: uppercase;
-  padding: 0.625rem 21.875rem 0.625rem 0.625rem;
+}
+
+input:valid {
+  border-left: 0.1875rem solid #7fff00;
+  transition-duration: 0.5s;
+}
+
+input:invalid {
+  border-left: 0.1875rem solid #FF0000;
+  transition-duration: 0.5s;
 }
 
 .contact-form-bio input:last-child {
   margin-bottom: 0;
 }
 
-.contact-form-massage textarea {
-  margin-bottom: 1.25rem;
+.contact-form-message {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.contact-form-message textarea {
+  resize: none;
   border-radius: 2px;
   text-transform: uppercase;
-  padding: 0.625rem 21.875rem 0.625rem 0.625rem;
+  padding: 0.625rem;
+  height: 11.125rem;
+  width: 18.75rem;
+  font-size: 0.875rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+
+textarea::placeholder {
+  color: #bbbbbb;
+}
+
+.btn-send {
+  border: 0.125rem solid #fed136;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--main-font-color);
+  background-color: var(--main-background-color);
+  padding: 1.5625rem 3.125rem;
+  border-radius: 3px;
+  display: block;
+  margin: auto;
+}
+
+.btn-send:hover {
+  color: #fed136;
+  background-color: #fff;
+  transition-duration: 0.5s;
+}
+
+.btn-send:focus {
+  color: #7fff00;
+  background-color: #7fff00;
+  border-color: #7fff00;
+  transition-duration: 0.3s;
+  outline: 0;
+  background-image: url("../img/checked.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn-send:focus > span {
+  opacity: 0;
+  visibility: hidden;
 }

@@ -48,20 +48,20 @@
             <div class="services-list">
                 <ul class="services-item">
                     <li class="services-card">
-                        <i class="services-icon" title="icon-basket"></i>
+                        <i class="services-icon-basket" title="icon-basket"></i>
                         <h4 class="services-name">E-Commerce</h4>
                         <p class="services-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
                             posuere odio in tincidunt.</p>
 
                     </li>
                     <li class="services-card">
-                        <i class="services-icon"></i>
+                        <i class="services-icon-laptop" title="icon-laptop"></i>
                         <h4 class="services-name">Responsive Web</h4>
                         <p class="services-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
                             posuere odio in tincidunt.</p>
                     </li>
-                    <li class="services-card">
-                        <i class="services-icon"></i>
+                    <li class="services-card" title="icon-look">
+                        <i class="services-icon-look"></i>
                         <h4 class="services-name">Web Security</h4>
                         <p class="services-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
                             posuere odio in tincidunt.</p>
@@ -78,17 +78,21 @@
             </header>
         </section>
         <div class="contact-form">
-            <form class="contact-form-bio">
-                <input type="text" name="name" placeholder="your name *">
-                <input type="email" name="name" placeholder="your e-mail *">
-                <input type="text" name="name" placeholder="Subject">
-            </form>
-            <form class="contact-form-message">
-                <textarea name="name" placeholder="your massage"></textarea>
+            <form action="#">
+                <div class="contact-form-bio">
+                    <input type="text" name="name" required placeholder="your name *">
+                    <input type="email" name="email" required placeholder="your e-mail *">
+                    <input type="text" name="Subject" required placeholder="Subject">
+                </div>
+                <div class="contact-form-message">
+                    <textarea name="message" placeholder="your message"></textarea>
+                </div>
             </form>
 
         </div>
-        <a href="#" class="btn">send message</a>
+        <button type="submit" class="btn-send">
+            <span>send message</span>
+        </button>
     </div>
 
 </body>
