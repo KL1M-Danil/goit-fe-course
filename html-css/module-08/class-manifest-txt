@@ -1,0 +1,19 @@
+masthead-wrapper 
+    -> promo-container
+        -> masthead
+            -> logo
+            -> login 
+                -> log in
+                -> sign up
+        -> promo
+            -> promo-title
+            -> promo-subtitle
+            -> promo-btn       
+
+people-wrapper
+    -> people-cotainer
+        -> people-title
+        -> people-card
+            -> people-photo
+            -> people-name
+            -> people-about
