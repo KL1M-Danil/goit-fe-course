@@ -1,0 +1,228 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("variables.css");
+
+html {
+    box-sizing: border-box;
+  }
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--main-font-color);
+}
+/*-----MASTHEAD-----*/
+
+.masthead-wrapper {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("../img/bg-masthead.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: RGBA(0, 0, 0, 0.5);
+  min-height: 33.75rem;
+}
+
+.promo-container {
+  min-width: 20rem;
+  max-width: 75rem;
+  margin: auto;
+  color: var(--main-font-color);
+  padding-top: 2.5rem;
+}
+
+.masthead {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+.login a {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  padding: 0.625rem 0.9375rem;
+}
+
+.sign-up {
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+logo {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  padding-top: 7.5rem;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.promo-subtitle {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+}
+
+.promo-btn {
+  color: var(--main-font-color);
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  padding: 0.625rem 4rem;
+}
+
+/*-----PEOPLE WRAPPER-----*/
+
+.people-container {
+  text-align: center;
+  margin: auto;
+  color: var(--second-font-color);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.people-title {
+  font-size: 1.375rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.people-card {
+  text-align: center;
+  margin-bottom: 1.875rem;
+  padding: 0 1.25rem;  
+}
+
+.people-photo {
+  margin-bottom: 1.25rem;
+}
+
+.people-name {
+  font-size: 0.875rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.people-about {
+  font-size: 0.875rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: #666666;
+  line-height: 1.5;
+}
+
+.people-btn {
+  border: 1px solid #ff4e50;
+  border-radius: 20px;
+  color: #ff4e50;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.625rem 4rem;
+}
+
+/*MEDIA*/
+
+@media (min-width: 768px) {
+  .masthead-wrapper {
+    min-height: 43.75rem;
+  }
+
+  .masthead {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  logo {
+    padding: 0;
+    margin-right: 50%;
+  }
+
+  .promo-title {
+    margin-top: 10rem;
+    margin-bottom: 2.5rem;
+    font-size: 3.25rem;
+  }
+
+  .promo-subtitle {
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .promo-btn {
+    padding: 0.625rem 1.5rem;
+  }
+
+  .people-container {
+    max-width: 50rem;
+    text-align: center;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .people-card {
+    flex: 0 0 45%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .people-container {
+    max-width: 80rem;
+    display: block;
+    text-align: center;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .people-card {
+    flex: 0 0 20%;
+    margin-bottom: 2.5rem;
+  }
+
+  .people-title {
+    margin-bottom: 2.5rem;
+  }
+
+  .people-title {
+    display: inline-block;
+  }
+}
