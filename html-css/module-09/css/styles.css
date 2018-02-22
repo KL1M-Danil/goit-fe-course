@@ -1,0 +1,267 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("variables.css");
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--main-font-color);
+}
+
+/*-----MASTHEAD-----*/
+
+.masthead-wrapper {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("../img/bg-masthead.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: RGBA(0, 0, 0, 0.5);
+  min-height: 33.75rem;
+}
+
+.container {
+  color: var(--main-font-color);
+  padding-top: 2.5rem;
+}
+
+.login {
+  text-align: center;
+}
+
+.login a {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  padding: 0.625rem 0.9375rem;
+}
+
+.sign-up {
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+.logo {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.promo {
+  text-align: center;
+}
+
+.promo-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.promo-subtitle {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+}
+
+.promo-btn {
+  color: var(--main-font-color);
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  padding: 0.625rem 4rem;
+}
+
+/*-----PEOPLE WRAPPER-----*/
+
+.people-section {
+  text-align: center;
+  color: var(--second-font-color);
+  padding-bottom: 2.5rem;
+}
+
+.people-title {
+  font-size: 1.375rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.people-card {
+  text-align: center;
+  margin-bottom: 1.875rem;
+  position: relative;
+}
+
+.people-card:last-child {
+  margin: 0;
+}
+
+.people-photo {
+  width: 7.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.people-name {
+  font-size: 0.875rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.people-about {
+  font-size: 0.875rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: #666666;
+  line-height: 1.5;
+}
+
+/*.people-card i {
+  background-image: url("/img/icon-tv.png");
+  background-color: #ff4e50;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  right: 20%;
+  bottom: 50%;
+}*/
+
+.icon-for-hunter,
+.icon-for-marsha,
+.icon-for-walker,
+.icon-for-hunter2 {
+  border-radius: 50%;
+  border: 4px solid #fff;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  right: 20%;
+  bottom: 50%;
+}
+
+.icon-for-hunter {
+  background-image: url("/img/icon-tv.png");
+  background-color: #ff4e50;
+}
+
+.icon-for-marsha {
+  background-image: url("/img/icon-tea.png");
+  background-color: #1cd7ad;
+}
+
+.icon-for-walker {
+  background-image: url("/img/icon-lab.png");
+  background-color: #ffa507;
+}
+
+.icon-for-hunter2 {
+  background-image: url("/img/icon-airplane.png");
+  background-color: #4e73db;
+}
+
+.people-btn {
+  border: 1px solid #ff4e50;
+  border-radius: 20px;
+  color: #ff4e50;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.625rem 4rem;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-top: 7.5rem;
+  }
+
+  .card-container [class*="col-"]:not(:last-child) {
+    margin-bottom: 3.75rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .card-container [class*="col-"]:not(:nth-child(n + 3)) {
+    margin-bottom: 3.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container:last-child {
+    padding-top: 4.375rem;
+  }
+
+  .masthead-wrapper {
+    min-height: 43.75rem;
+  }
+
+  .promo-title {
+    margin-top: 10rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    font-size: 3.25rem;
+  }
+
+  .promo-subtitle {
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .promo-btn {
+    padding: 0.625rem 1.5rem;
+  }
+
+  .people-title {
+    margin-bottom: 2.5rem;
+  }
+
+  .people-btn {
+    padding: 0.625rem 1.5rem;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .icon-for-hunter {
+    background-image: url("/img/icon-tv@2x.png");
+    background-size: 2.5rem;
+  }
+
+  .icon-for-marsha {
+    background-image: url("/img/icon-tea@2x.png");
+    background-size: 2.5rem;
+  }
+
+  .icon-for-walker {
+    background-image: url("/img/icon-lab@2x.png");
+    background-size: 2.5rem;
+  }
+
+  .icon-for-hunter2 {
+    background-image: url("/img/icon-airplane@2x.png");
+    background-size: 2.5rem;
+  }
+}
