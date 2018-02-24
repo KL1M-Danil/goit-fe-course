@@ -147,27 +147,27 @@ a {
   background-size: cover;
   background-position: center;
   position: absolute;
-  right: 17%;
+  right: 18%;
   bottom: 20%;
 }
 
 .icon-for-hunter {
-  background-image: url("/img/icon-tv.png");
+  background-image: url("../img/icon-tv.png");
   background-color: #ff4e50;
 }
 
 .icon-for-marsha {
-  background-image: url("/img/icon-tea.png");
+  background-image: url("../img/icon-tea.png");
   background-color: #1cd7ad;
 }
 
 .icon-for-walker {
-  background-image: url("/img/icon-lab.png");
+  background-image: url("../img/icon-lab.png");
   background-color: #ffa507;
 }
 
 .icon-for-hunter2 {
-  background-image: url("/img/icon-airplane.png");
+  background-image: url("../img/icon-airplane.png");
   background-color: #4e73db;
 }
 
