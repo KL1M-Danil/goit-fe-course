@@ -133,10 +133,17 @@ ul {
   text-transform: uppercase;
 }
 
+.promo__btn:hover {
+  background-color: #95e1d3;
+  transition-duration: 0.3s;
+}
+
 /*-----SERVICES-----*/
 
 .container {
   padding-top: 30px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .section-header {
@@ -246,6 +253,10 @@ ul {
 
 /*----TEAM----*/
 
+.team-wrapper {
+  margin-bottom: 85px;
+}
+
 .section-header__text {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -256,7 +267,11 @@ ul {
 
 .team-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.team-list__item {
+  flex: 0 0 32%;
 }
 
 .team-card:hover .team-card__content {
@@ -363,4 +378,52 @@ ul {
       ),
       url("../img/bg-image@2x.jpg");
   }
+}
+
+/*----FOOTER----*/
+
+.footer {
+  max-width: 1200px;
+  margin: auto;
+  border-top: 1px solid rgb(229, 229, 229);
+  padding-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.license {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.license__word--red {
+  color: #f38181;
+}
+
+input {
+  padding: 10px 0px 10px 10px;
+  width: 230px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  color: #cccccc;
+}
+
+.btn-subcribe {
+  padding: 12px 30px;
+  background-color: #95e1d3;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--first-font-color);
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.btn-subcribe:hover {
+  background-color: #f1d889;
+  transition-duration: 0.3s;
 }
