@@ -1,0 +1,37 @@
+-> promo-wrapper
+    -> promo-container 
+        -> header.mastheader
+            -> a.logo
+            -> menu
+                -> a.menu-item
+        -> promo 
+            -> promo-caption
+            -> h3.promo-title
+            -> a.promo-btn
+
+-> services-wrapper  
+    -> services-container   
+        -> section-header   
+            -> p.section-header-caption
+            -> h3.section-header-title
+        -> service-cards
+            -> service-card-item*6
+                -> service-card-icon
+                -> h4.service-card-title
+                -> p.service-card-text
+
+-> team-wrapper 
+    -> services-container   
+        -> section-header   
+            -> p.section-header-caption
+            -> h3.section-header-title
+            -> p.section-header-text
+        -> team-list
+            -> team-list-item
+                -> team-card
+                    -> team-card-img
+                        -> team-card-icons
+                            -> team-card-icon
+                    -> team-card-meta
+                        -> h4.team-card-name
+                        -> p.team-card-position             

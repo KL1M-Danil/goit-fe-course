@@ -1,0 +1,366 @@
+@import url("normalize.css");
+@import url("variables.css");
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--first-font-color);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+/*-----MASTHEAD-----*/
+
+.promo-wrapper {
+  background-image: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.81) 0%,
+      rgba(243, 129, 129, 0.81) 100%
+    ),
+    url("../img/bg-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+}
+
+.promo-container {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+}
+
+.logo {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__item {
+  border-bottom: 3px solid transparent;
+  margin-right: 50px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__item:hover {
+  border-bottom-color: #fce38a;
+}
+
+.menu__link {
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.menu__link:hover {
+  color: #fce38a;
+  transition-duration: 0.2s;
+}
+
+.menu__icons {
+  fill: #fff;
+}
+
+.menu__icons:hover {
+  fill: #fce38a;
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+
+/*PROMO*/
+
+.promo {
+  text-align: center;
+  color: var(--first-font-color);
+  width: 840px;
+  margin: auto;
+}
+
+.promo__caption {
+  font-family: Kaushan Script, sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  margin-bottom: 70px;
+  margin-top: 175px;
+}
+
+.promo__title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 150px;
+  text-transform: uppercase;
+  margin-bottom: 125px;
+  margin-top: 0;
+}
+
+.promo__btn {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  border: 2px solid #fff;
+  padding: 10px 25px;
+  text-transform: uppercase;
+}
+
+/*-----SERVICES-----*/
+
+.container {
+  padding-top: 30px;
+}
+
+.section-header {
+  text-align: center;
+  color: var(--second-font-color);
+  max-width: 950px;
+  margin: auto;
+}
+
+.section-header__caption {
+  font-family: Kaushan Script, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+.section-header__title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  margin-top: 0;
+}
+
+.section-header__title::after {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: var(--third-font-color);
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service-cards__item {
+  flex: 0 0 28%;
+  margin-bottom: 100px;
+  margin-right: 60px;
+}
+
+.service-cards__item:nth-child(n + 2) {
+  margin-bottom: 0;
+}
+
+.service-cards__box {
+  display: flex;
+}
+
+.service-cards__icon {
+  height: 35px;
+  width: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+}
+
+.service-cards__icon--alarm {
+  background-image: url("../img/icons/icon-alarm.png");
+}
+
+.service-cards__icon--linebox {
+  background-image: url("../img/icons/icon-line.png");
+}
+
+.service-cards__icon--computer {
+  background-image: url("../img/icons/icon-comp.png");
+}
+
+.service-cards__icon--book {
+  background-image: url("../img/icons/icon-book.png");
+}
+
+.service-cards__icon--home {
+  background-image: url("../img/icons/icon-home.png");
+}
+
+.service-cards__icon--cubebox {
+  background-image: url("../img/icons/icon-cube.png");
+}
+
+.service-cards__title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--second-font-color);
+  margin-top: 0;
+}
+
+.card-text {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
+  margin-top: 0;
+}
+
+/*----TEAM----*/
+
+.section-header__text {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 100px;
+  color: #999999;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.team-card:hover .team-card__content {
+  transform: translate(-10px, -10px);
+}
+
+.team-card {
+  background-color: #95e1d3;
+}
+
+.team-card:hover .team-card__content::after {
+  opacity: 1;
+}
+
+.team-card:hover .team-card__icons {
+  opacity: 1;
+}
+
+.team-card__content {
+  position: relative;
+  transition: transform 0.2s linear;
+}
+
+.team-card__content::after {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  content: "";
+  background-image: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.81) 0%,
+    rgba(243, 129, 129, 0.81) 100%
+  );
+  transition: opacity 0.2s linear;
+}
+
+.team-card__icons {
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: opacity 0.2s linear;
+}
+
+.team-card__icon {
+  display: flex;
+  margin-right: 2px;
+  background-color: #fce38a;
+  fill: #f38181;
+  height: 56px;
+  width: 56px;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-card__icon:last-child {
+  margin-right: 0;
+}
+
+.team-card__icon:hover {
+  background-color: #f38181;
+  fill: #fff;
+}
+
+.team-card__meta {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.team-card__name {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 0;
+  padding-top: 30px;
+  margin-bottom: 15px;
+}
+
+.team-card__position {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #999999;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .promo-wrapper {
+    background-image: linear-gradient(
+        to top,
+        rgba(252, 227, 138, 0.81) 0%,
+        rgba(243, 129, 129, 0.81) 100%
+      ),
+      url("../img/bg-image@2x.jpg");
+  }
+}
