@@ -87,9 +87,18 @@ ul {
 }
 
 .menu {
+  display: flex;
+}
+
+.site-menu,
+.user-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.site-menu {
+  margin-right: 50px;
 }
 
 .menu__item {
@@ -244,6 +253,10 @@ ul {
 
 .service-cards__item:nth-child(n + 2) {
   margin-bottom: 0;
+}
+
+.service-cards__item:nth-child(3n + 3) {
+  margin-right: 0;
 }
 
 .service-cards__box {
@@ -547,6 +560,7 @@ input {
   color: var(--first-font-color);
   text-transform: uppercase;
   border-radius: 0;
+  border: 0;
 }
 
 .btn-subcribe:hover {
