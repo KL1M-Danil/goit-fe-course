@@ -1,0 +1,122 @@
+/*-----SERVICES-----*/
+
+.container {
+  padding-top: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container--big-indent {
+  padding-top: 90px;
+}
+
+.section-header {
+  text-align: center;
+  color: $second-font-color;
+  max-width: 950px;
+  margin: auto;
+}
+
+.section-header-caption {
+  font-family: $third-font-family;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+.section-header-title {
+  font-family: $main-font-family;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  margin-top: 0;
+}
+
+.section-header-title::after {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: $third-font-color;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service-cards-item {
+  flex: 0 0 28%;
+  margin-bottom: 100px;
+  margin-right: 60px;
+
+  &:nth-child(n + 2) {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+}
+
+.service-cards-box {
+  display: flex;
+}
+
+.service-cards-icon {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.service-cards-icon--alarm {
+  background-image: url("../img/icons/icon-alarm.svg");
+}
+
+.service-cards-icon--linebox {
+  background-image: url("../img/icons/icon-line.svg");
+}
+
+.service-cards-icon--computer {
+  background-image: url("../img/icons/icon-comp.svg");
+}
+
+.service-cards-icon--book {
+  background-image: url("../img/icons/icon-book.svg");
+}
+
+.service-cards-icon--home {
+  background-image: url("../img/icons/icon-home.svg");
+}
+
+.service-cards-icon--cubebox {
+  background-image: url("../img/icons/icon-cube.svg");
+}
+
+.service-cards-title {
+  font-family: $main-font-family;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: $second-font-color;
+  margin-top: 0;
+}
+
+.card-text {
+  font-family: $second-font-family;
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
+  margin-top: 0;
+}

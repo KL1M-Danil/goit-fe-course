@@ -2,3 +2,39 @@
    Import partials below
 */
 @import "normalize";
+@import "promo";
+@import "services";
+@import "team";
+@import "footer";
+
+$main-font-color: #ffffff;
+$second-font-color: #333333;
+$third-font-color: #f38181;
+$main-font-family: Montserrat, sans-serif;
+$second-font-family: Roboto, sans-serif;
+$third-font-family: Kaushan Script, sans-serif;
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: $main-font-color;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}

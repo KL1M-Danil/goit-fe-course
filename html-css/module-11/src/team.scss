@@ -1,0 +1,128 @@
+/*----TEAM----*/
+
+.team-wrapper {
+  margin-bottom: 85px;
+}
+
+.section-header-text {
+  font-family: $second-font-family;
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 100px;
+  color: #999999;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list-item {
+  flex: 0 0 32%;
+}
+
+.team-card:hover .team-card-content {
+  transform: translate(-10px, -10px);
+}
+
+.team-card {
+  background-color: #95e1d3;
+}
+
+.team-card:hover .team-card-content::after {
+  opacity: 1;
+}
+
+.team-card:hover .team-card-icons {
+  opacity: 1;
+}
+
+.team-card-content {
+  position: relative;
+  transition: transform 0.2s linear;
+}
+
+.team-card-content::after {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  content: "";
+  background-image: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.81) 0%,
+    rgba(243, 129, 129, 0.81) 100%
+  );
+  transition: opacity 0.2s linear;
+}
+
+.team-card-icons {
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: opacity 0.2s linear;
+}
+
+.team-card-icon {
+  display: flex;
+  margin-right: 2px;
+  background-color: #fce38a;
+  fill: #f38181;
+  height: 56px;
+  width: 56px;
+  align-items: center;
+  justify-content: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: #f38181;
+    fill: #fff;
+  }
+}
+
+.team-card-meta {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.team-card-name {
+  font-family: $main-font-family;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 0;
+  padding-top: 30px;
+  margin-bottom: 15px;
+}
+
+.team-card-position {
+  font-family: $second-font-family;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #999999;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .promo-wrapper {
+    background-image: linear-gradient(
+        to top,
+        rgba(252, 227, 138, 0.81) 0%,
+        rgba(243, 129, 129, 0.81) 100%
+      ),
+      url("../img/bg-image@2x.jpg");
+  }
+}

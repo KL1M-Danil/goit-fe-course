@@ -1,0 +1,52 @@
+/*----FOOTER----*/
+
+.footer {
+  max-width: 1200px;
+  margin: auto;
+  border-top: 1px solid rgb(229, 229, 229);
+  padding-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.license {
+  font-family: $main-font-family;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.license::before {
+  content: "\00A9";
+}
+
+.license-word--red {
+  color: #f38181;
+}
+
+input {
+  padding: 10px 0px 10px 10px;
+  width: 230px;
+  font-family: $second-font-family;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  color: #cccccc;
+}
+
+.btn-subcribe {
+  padding: 12px 30px;
+  background-color: #95e1d3;
+  font-family: $main-font-family;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--first-font-color);
+  text-transform: uppercase;
+  border-radius: 0;
+  border: 0;
+
+  :hover {
+    background-color: #f1d889;
+    transition-duration: 0.3s;
+  }
+}

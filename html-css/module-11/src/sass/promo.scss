@@ -1,0 +1,121 @@
+/*-----MASTHEAD-----*/
+
+.promo-wrapper {
+  background-image: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.81) 0%,
+      rgba(243, 129, 129, 0.81) 100%
+    ),
+    url("../img/bg-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+}
+
+.promo-container {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+}
+
+.logo {
+  font-family: $main-font-family;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.menu {
+  display: flex;
+}
+
+.site-menu,
+.user-menu {
+  display: flex;
+}
+
+.site-menu {
+  margin-right: 50px;
+}
+
+.menu-item {
+  border-bottom: 3px solid transparent;
+  margin-right: 50px;
+
+  &:hover {
+    border-bottom-color: #fce38a;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu-link {
+  text-transform: uppercase;
+  font-family: $main-font-family;
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 10px;
+
+  &:hover {
+    color: #fce38a;
+    transition-duration: 0.2s;
+  }
+}
+
+.menu-icons {
+  fill: #fff;
+
+  &:hover {
+    fill: #fce38a;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+  }
+}
+
+/*PROMO*/
+
+.promo {
+  text-align: center;
+  color: $main-font-color;
+  width: 840px;
+  margin: auto;
+}
+
+.promo-caption {
+  font-family: $third-font-family;
+  font-weight: 400;
+  font-size: 72px;
+  margin-bottom: 70px;
+  margin-top: 175px;
+}
+
+.promo-title {
+  font-family: $main-font-family;
+  font-weight: 700;
+  font-size: 150px;
+  text-transform: uppercase;
+  margin-bottom: 125px;
+  margin-top: 0;
+}
+
+.promo-btn {
+  font-family: $main-font-family;
+  font-weight: 400;
+  font-size: 14px;
+  border: 2px solid #fff;
+  padding: 10px 25px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #95e1d3;
+    transition-duration: 0.3s;
+  }
+}
