@@ -2,33 +2,10 @@
    Import partials below
 */
 @import "normalize";
+@import "base";
 @import "variables";
 @import "promo";
 @import "services";
 @import "team";
 @import "footer";
 
-html {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  display: inline-block;
-  color: $main-font-color;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-li {
-  list-style-type: none;
-}
-
-ul {
-  margin-bottom: 0;
-  padding-left: 0;
-}

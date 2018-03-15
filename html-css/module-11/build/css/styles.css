@@ -345,31 +345,6 @@ template {
 	display: none;
 }
 
-html {
-	box-sizing: border-box;
-}
-
-a {
-	text-decoration: none;
-	display: inline-block;
-	color: #ffffff;
-}
-
-img {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-li {
-	list-style-type: none;
-}
-
-ul {
-	margin-bottom: 0;
-	padding-left: 0;
-}
-
 /*-----MASTHEAD-----*/
 
 .promo-wrapper {
@@ -778,6 +753,37 @@ input {
 .btn-subcribe :hover {
 	background-color: #f1d889;
 	transition-duration: 0.3s;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	color: #ffffff;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul {
+	margin-bottom: 0;
+	padding-left: 0;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
