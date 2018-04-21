@@ -12,28 +12,25 @@ const isValidInput = userInput !== null && !Number.isNaN(sumSpot);
 if (isValidInput) {
   let group;
   let sum;
+  let isSure;
 
   if (groupTaba >= sumSpot) {
     group = 'Taba';
 
-    confirm(`Есть место в группе ${group}, вы согласны быть в ней?`);
+    isSure = confirm(`Есть место в группе ${group}, вы согласны быть в ней?`);
 
-    console.log(confirm);
-
-    if (confirm) {
+    if (isSure) {
       groupTaba = groupTaba - sumSpot;
       alert(`Приятного путешествия в группе ${group}`);
     } else {
       alert('Нам очень жаль, приходите еще!');
-
-      console.log(alert);
     }
   } else if (groupSharm >= sumSpot) {
     group = 'Sharm';
 
-    confirm(`Есть место в группе ${group}, вы согласны быть в ней?`);
+    isSure = confirm(`Есть место в группе ${group}, вы согласны быть в ней?`);
 
-    if (confirm) {
+    if (isSure) {
       groupSharm = groupSharm - sumSpot;
       alert(`Приятного путешествия в группе ${group}`);
     } else {
@@ -42,9 +39,9 @@ if (isValidInput) {
   } else if (groupHurga >= sumSpot) {
     group = 'Hurga';
 
-    confirm(`Есть место в группе ${group}, вы согласны быть в ней?`);
+    isSure = confirm(`Есть место в группе ${group}, вы согласны быть в ней?`);
 
-    if (confirm) {
+    if (isSure) {
       groupHurga = groupHurga - sumSpot;
       alert(`Приятного путешествия в группе ${group}`);
     } else {
@@ -55,5 +52,4 @@ if (isValidInput) {
   }
 } else {
   alert('Oшибка ввода!');
-} 
-
+}
