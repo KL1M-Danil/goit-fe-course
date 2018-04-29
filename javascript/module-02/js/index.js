@@ -28,6 +28,6 @@ do {
   }
 } while (lastChance > 0);
 
-if ((lastChance = 1)) {
+if ((lastChance === 1)) {
   alert('У вас закончились попытки, аккаунт заблокирован!');
 }
