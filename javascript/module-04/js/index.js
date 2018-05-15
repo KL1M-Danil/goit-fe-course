@@ -8,10 +8,10 @@ function Cashier(name, products) {
   this.changeAmount = 0;
 
   this.countTotalPrice = function(order) {
-    let val = Object.values(order);
+    let keysOrder = Object.keys(order);
 
-    for (let i = 0, lengthOrder = val.length; i < lengthOrder; i += 1) {
-      this.totalPrice += val[i];
+    for (const key of keysOrder) {
+      this.totalPrice += this.products[key] * order[key]; 
     }
   };
 
@@ -21,7 +21,6 @@ function Cashier(name, products) {
 
       if (this.customerMoney === null) {
         return null;
-        break;
       }
     } while (this.customerMoney < this.totalPrice);
   };
