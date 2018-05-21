@@ -6,25 +6,23 @@ function SocialBook(users = [], posts = {}) {
   };
 
   this.getUserByLogin = function(login) {
-    const foundUserByLogin = users.find(x => x.login === login);
+    const foundUserByLogin = users.find(user => user.login === login);
     return foundUserByLogin;
   };
 
   this.getUserStatus = function(userId) {
-    const foundUserById = users.find(x => x.id === userId);
+    const foundUserById = users.find(user => user.id === userId);
     return foundUserById.isActive ? "active" : "incactive";
   };
 
   this.addUser = function(user) {
-    const newUser = users.map(user => ({
-      ...user,
-      id: getId(),
-      isActive: false
-    }));
+    user.id = getId();
+    user.isActive = false;
+    users.push(user);
   };
 
   this.removeUserById = function(userId) {
-    const userForDelete = users.filter(x => x.id === userId);
+    users = users.filter(user => user.id !== userId);
   };
 
   this.getUsersCount = function() {
@@ -40,7 +38,7 @@ const getId = () =>
     .toString(36)
     .substr(2, 9);
 
-const user = { email: "xleb@kolbasa.maslo", password: '1488228' };
+const user = { login: "xleb@kolbasa.maslo", password: "1488228" };
 
 const initialUsers = [
   {
@@ -81,6 +79,4 @@ const initialPosts = {
 
 const socialBook = new SocialBook(initialUsers, initialPosts);
 
-socialBook.addUser(user);
-
-//socialBook.removeUserById("s19a6hqce");
+socialBook.removeUserById("-s19a6hqce");
