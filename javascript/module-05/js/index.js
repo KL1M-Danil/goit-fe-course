@@ -1,6 +1,9 @@
 'use strict';
 
 function SocialBook(users = [], posts = {}) {
+  this.users = users;
+  this.posts = posts;
+
   this.getAllUsers = function() {
     return (this.users = users);
   };
@@ -26,7 +29,7 @@ function SocialBook(users = [], posts = {}) {
   };
 
   this.getUsersCount = function() {
-    const totalUsers = this.users.reduce((acc, user) => acc + user, 0);
+    const totalUsers = this.users.length;
     return totalUsers;
   };
 }
