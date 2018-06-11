@@ -36,13 +36,11 @@ const posts = [
   }
 ];
 
-//const string = `<ul>${posts.reduce((acc, x) => acc + `<li>${x}</li>`, '')}</ul>`;
-
 function createCards(arr) {
   return arr.reduce((acc, obj) => acc + createPostCard(obj), "");
 }
 
-function createPostCard({ img, title, text }) {
+function createPostCard({ img, title, text, stats }) {
   return `
  <div class="post">
  <img class="post__image" src="${img}" alt="post image">
@@ -53,19 +51,19 @@ function createPostCard({ img, title, text }) {
    <li class="actions__item">
      <button class="actions__btn ">
        <span class="actions__icon actions__icon--like"></span>
-       <span class="actions__count"></span>
+       <span class="actions__count">${stats.likes}</span>
      </button>
    </li>
    <li class="actions__item">
      <button class="actions__btn">
        <span class="actions__icon actions__icon--dislike"></span>
-       <span class="actions__count"></span>
+       <span class="actions__count">${stats.dislikes}</span>
      </button>
    </li>
    <li class="actions__item">
      <button class="actions__btn">
         <span class="actions__icon actions__icon--fav"></span>
-       <span class="actions__count"></span>
+       <span class="actions__count">${stats.fav}</span>
      </button>
    </li>
  </ul>
@@ -75,4 +73,4 @@ function createPostCard({ img, title, text }) {
 }
 
 console.log(createCards(posts));
-//console.log(string);
+
