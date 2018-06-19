@@ -1,0 +1,22 @@
+li {
+  list-style: none;
+  margin-right: 10px;
+  border: 2px solid black;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+.fullview img {
+  height: 600px;
+}
+
+.preview img {
+  width: 140px;
+}
+
+.preview {
+  display: flex;
+  padding: 0;
+}
