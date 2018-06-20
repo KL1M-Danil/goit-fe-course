@@ -35,11 +35,11 @@ const galleryItems = [
 
 const imageGallery = document.querySelector(".js-image-gallery");
 
-function createPreviewItem(arr) {
-  const newArr = arr.reduce((acc, obj) => acc.push(createPreviewImage(obj)), []);
-  console.log(newArr);
-  return newArr;
-}
+// function createPreviewItem(arr) {
+//   const newArr = arr.reduce((acc, obj) => acc ? (createPreviewImage(obj), '');
+//   console.log(newArr);
+//   return newArr;
+// }
 
 
 function createImageGallary({ fullview, alt }) {
