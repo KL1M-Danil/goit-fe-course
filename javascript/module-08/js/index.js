@@ -3,7 +3,7 @@
 const galleryItems = [
   {
     preview: "img/tech01-pre.jpeg",
-    fullview: "img/tech01-full.jpeg",
+    fullview: "img/tech01-full .jpeg",
     alt: "technology picture #1"
   },
   {
@@ -35,30 +35,29 @@ const galleryItems = [
 
 const imageGallery = document.querySelector(".js-image-gallery");
 
-// function createPreviewItem(arr) {
-//   const newArr = arr.reduce((acc, obj) => acc ? (createPreviewImage(obj), '');
-//   console.log(newArr);
-//   return newArr;
-// }
-
-
-function createImageGallary({ fullview, alt }) {
+function createFullView(items) {
   const fullView = document.createElement("div");
   fullView.classList.add("fullview");
 
   const fullViewImage = document.createElement("img");
-  fullViewImage.setAttribute("src", fullview);
-  fullViewImage.setAttribute("alt", alt);
+  fullViewImage.setAttribute("src", items[0].fullview);
+  fullViewImage.setAttribute("alt", items[0].alt);
 
   fullView.appendChild(fullViewImage);
 
+  return fullView;
+}
+
+function createPreview(items) {
   const previewGallery = document.createElement("ul");
   previewGallery.classList.add("preview");
 
-  previewGallery.append(createPreviewImage(galleryItems));
+  for (const item of items) {
+    const el = createPreviewImage(item);
+    previewGallery.append(el);
+  }
 
-  imageGallery.append(fullView, previewGallery);
-  return imageGallery;
+  return previewGallery;
 }
 
 function createPreviewImage({ preview, fullview, alt }) {
@@ -71,10 +70,34 @@ function createPreviewImage({ preview, fullview, alt }) {
 
   previewItem.appendChild(previewImage);
 
-  //console.log(previewItem);
   return previewItem;
 }
 
-createImageGallary(galleryItems);
-createPreviewItem(galleryItems);
-createPreviewImage(galleryItems);
+const fullview = createFullView(galleryItems);
+const preview = createPreview(galleryItems);
+
+imageGallery.append(fullview, preview);
+
+preview.addEventListener("click", onPreviewClick);
+
+const images = document.querySelectorAll("img");
+
+function onPreviewClick(event) {
+  const target = event.target;
+  const nodeName = target.nodeName;
+  const fullViewImage = fullview.firstChild;
+
+  if (nodeName !== "IMG") return;
+
+  fullViewImage.setAttribute("src", target.dataset.fullview);
+
+  images.forEach(img => {
+    if (img !== target) {
+      img.classList.remove("img-active");
+      img.classList.add("img-hidden");
+    } else {
+      img.classList.add("img-active");
+      img.classList.remove("img-hidden");
+    }
+  });
+}

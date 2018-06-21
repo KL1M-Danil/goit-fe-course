@@ -1,7 +1,12 @@
+.image-gallery {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
 li {
   list-style: none;
   margin-right: 10px;
-  border: 2px solid black;
 }
 
 li:last-child {
@@ -10,6 +15,9 @@ li:last-child {
 
 .fullview img {
   height: 600px;
+  border: 15px solid;
+  border-image: linear-gradient(135deg, #857667 38%, #fdd6b9 65%);
+  border-image-slice: 1;
 }
 
 .preview img {
@@ -19,4 +27,15 @@ li:last-child {
 .preview {
   display: flex;
   padding: 0;
+}
+
+.img-active {
+  border: 5px solid;
+  border-image: linear-gradient(135deg, #4a4744 38%, rgb(223, 119, 39) 65%);
+  border-image-slice: 1;
+}
+
+.img-hidden {
+  border: 5px solid transparent;
+  transition-duration: 0.4s;
 }
